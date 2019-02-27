@@ -1,0 +1,46 @@
+<!--
+Web151
+M3T2
+Brandon Jones
+Feb 20,2019
+-->
+
+
+
+
+<html>
+<head>
+
+</head>
+<body>
+	<h1>Hello World</h1>
+   
+	<script>
+	var insult={};
+	var randomBodyParts = ["Face", "Nose", "Hair", "Mouth", "Forehead"];
+	var randomAdjectives = ["Smelly", "Boring", "Stupid", "Lazy", "Small" ];
+	var randomAnimals = ["Rhino", "Bull", "Goose", "Horse", "Rat"];
+	var randomAnimalBodyParts = ["Nose", "Stomach", "Leg", "Thigh", "Head"];  
+	insult.randomize=function(){
+	// Pick a random body part from the RandomBodyParts array:
+	insult.randomBodyPart = randomBodyParts[Math.floor(Math.random()*5)];
+	//pick a random adjective from the randomAdjectives array:
+	insult.randomAdjective = randomAdjectives[Math.floor(Math.random()*5)];
+	//pick a random word from the randomWords array:
+	insult.randomAnimal = randomAnimals[Math.floor(Math.random()*5)];
+	// pick a random animal body part from randomAnimalBodyParts array:
+	insult.randomAnimalBodyPart = randomAnimalBodyParts[Math.floor(Math.random()*5)];
+	}
+	//Join all the random strings into a sentence:
+	insult.print=function(){
+	insult.randomInsult= "Your " + insult.randomBodyPart + " is more " +
+	insult.randomAdjective + " than a " + insult.randomAnimal + "'s " + insult.randomAnimalBodyPart + "!!!";
+	document.write(insult.randomInsult);
+	}
+	
+	insult.randomize();
+	insult.print();
+	</script>
+</body>
+
+</html>
