@@ -1,0 +1,121 @@
+//Web151
+//M2T2 
+//Brandon Jones
+//1/30/19
+
+//Challenge1 Grid
+moveForward();
+moveForward();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+moveForward();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+moveForward();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+moveForward();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+moveForward();
+turnLeft();
+turnLeft();
+moveForward();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+moveForward();
+moveForward();
+moveForward();
+turnLeft();
+turnLeft();
+turnLeft();
+
+
+
+//Challenge2 diamond
+drawDiamond();
+function drawStep(){
+  moveForward();
+  turnLeft();
+  moveForward();
+  right();
+}
+
+function right(){
+  turnLeft();
+  turnLeft();
+  turnLeft();
+}
+function drawSide() {
+  drawStep();
+  drawStep();
+  drawStep();
+  moveForward();
+}
+function drawDiamond() {
+  drawSide();
+  right();
+  drawSide();
+  right();
+  drawSide();
+  right();
+  drawSide();
+  right();
+}
